@@ -1,6 +1,5 @@
 import requests
 import json
-import pprint
 
 
 def currency_rates():
@@ -14,4 +13,6 @@ def currency_rates():
     kurs = dict_json['Valute'][valuta]['Value']
     print(f'1 {valuta} =  {kurs} RUB')
     return
+
+
 currency_rates()
